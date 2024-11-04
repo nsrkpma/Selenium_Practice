@@ -57,7 +57,7 @@ public class Scope {
 	}
 
 	@Test
-	public void ClickOnLinks() {
+	public void ClickOnLinks() throws InterruptedException {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
@@ -75,6 +75,7 @@ public class Scope {
 			String parentid = it.next();
 			String childid = it.next();
 			driver.switchTo().window(childid);
+			Thread.sleep(3000);
 			System.out.println(driver.getTitle());
 			driver.close();
 			driver.switchTo().window(parentid);
