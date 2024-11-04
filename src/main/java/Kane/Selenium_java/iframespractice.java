@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class iframespractive {
+public class iframespractice {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -22,3 +22,4 @@ public class iframespractive {
 	}
 
 }
+	
