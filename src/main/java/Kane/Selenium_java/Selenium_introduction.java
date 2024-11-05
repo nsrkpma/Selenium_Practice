@@ -62,5 +62,8 @@ public class Selenium_introduction {
 		
 		driver.quit();
 	}
+	public static void closemethod(WebDriver driver) {
+		driver.close();
+	}
 
 }

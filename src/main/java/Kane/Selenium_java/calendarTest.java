@@ -1,6 +1,5 @@
+package Kane.Selenium_java;
 import java.util.List;
-
-import java.util.concurrent.TimeUnit;
 
 
 
@@ -12,13 +11,11 @@ import org.openqa.selenium.WebElement;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import org.openqa.selenium.firefox.FirefoxDriver;
-
 import org.testng.Assert;
 
 
 
-public class CalendarTest {
+public class calendarTest {
 
 
 
