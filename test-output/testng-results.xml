@@ -1,101 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-05T18:21:04 IST" name="Suite" finished-at="2024-11-05T18:22:22 IST" duration-ms="77970">
+  <suite started-at="2024-11-05T18:46:52 IST" name="Suite" finished-at="2024-11-05T18:46:52 IST" duration-ms="111">
     <groups>
     </groups>
-    <test started-at="2024-11-05T18:21:04 IST" name="full package" finished-at="2024-11-05T18:22:22 IST" duration-ms="77970">
-      <class name="Kane.Selenium_java.Scroll">
-        <test-method signature="scrollDemo()[pri:0, instance:Kane.Selenium_java.Scroll@710c2b53]" started-at="2024-11-05T18:22:18 IST" name="scrollDemo" finished-at="2024-11-05T18:22:22 IST" duration-ms="4015" status="PASS">
+    <test started-at="2024-11-05T18:46:52 IST" name="Test suite 1" finished-at="2024-11-05T18:46:52 IST" duration-ms="111">
+      <class name="Kane.Selenium_java.test1">
+        <test-method is-config="true" signature="clockin()[pri:0, instance:Kane.Selenium_java.test1@72035809]" started-at="2024-11-05T18:46:52 IST" name="clockin" finished-at="2024-11-05T18:46:52 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- scrollDemo -->
-      </class> <!-- Kane.Selenium_java.Scroll -->
-      <class name="Kane.Selenium_java.Practice">
-        <test-method signature="endToEndTest()[pri:0, instance:Kane.Selenium_java.Practice@6fa51cd4]" started-at="2024-11-05T18:21:24 IST" name="endToEndTest" finished-at="2024-11-05T18:21:38 IST" duration-ms="14195" status="PASS">
+        </test-method> <!-- clockin -->
+        <test-method is-config="true" signature="Login()[pri:0, instance:Kane.Selenium_java.test1@72035809]" started-at="2024-11-05T18:46:52 IST" name="Login" finished-at="2024-11-05T18:46:52 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- endToEndTest -->
-      </class> <!-- Kane.Selenium_java.Practice -->
-      <class name="Kane.Selenium_java.BrokenLinks">
-        <test-method signature="validateBrokenLinks()[pri:0, instance:Kane.Selenium_java.BrokenLinks@57a78e3]" started-at="2024-11-05T18:21:11 IST" name="validateBrokenLinks" finished-at="2024-11-05T18:21:20 IST" duration-ms="9213" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-The link with Text Appium is broken with code: 403 expected [true] but found [false],
-The link with Text Broken Link is broken with code: 404 expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-The link with Text Appium is broken with code: 403 expected [true] but found [false],
-The link with Text Broken Link is broken with code: 404 expected [true] but found [false]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at Kane.Selenium_java.BrokenLinks.validateBrokenLinks(BrokenLinks.java:102)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- Login -->
+        <test-method signature="Applycoupon()[pri:0, instance:Kane.Selenium_java.test1@72035809]" started-at="2024-11-05T18:46:52 IST" name="Applycoupon" finished-at="2024-11-05T18:46:52 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateBrokenLinks -->
-      </class> <!-- Kane.Selenium_java.BrokenLinks -->
-      <class name="Kane.Selenium_java.Alert">
-        <test-method signature="alertsPractice()[pri:0, instance:Kane.Selenium_java.Alert@5afa3c9]" started-at="2024-11-05T18:21:04 IST" name="alertsPractice" finished-at="2024-11-05T18:21:11 IST" duration-ms="7292" status="PASS">
+        </test-method> <!-- Applycoupon -->
+        <test-method is-config="true" signature="Login()[pri:0, instance:Kane.Selenium_java.test1@72035809]" started-at="2024-11-05T18:46:52 IST" name="Login" finished-at="2024-11-05T18:46:52 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- alertsPractice -->
-      </class> <!-- Kane.Selenium_java.Alert -->
-      <class name="Kane.Selenium_java.Scope">
-        <test-method signature="ClickOnLinks()[pri:0, instance:Kane.Selenium_java.Scope@2767e23c]" started-at="2024-11-05T18:21:38 IST" name="ClickOnLinks" finished-at="2024-11-05T18:22:05 IST" duration-ms="27091" status="PASS">
+        </test-method> <!-- Login -->
+        <test-method signature="Logout()[pri:0, instance:Kane.Selenium_java.test1@72035809]" started-at="2024-11-05T18:46:52 IST" name="Logout" finished-at="2024-11-05T18:46:52 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ClickOnLinks -->
-        <test-method signature="FooterLinkCount()[pri:0, instance:Kane.Selenium_java.Scope@2767e23c]" started-at="2024-11-05T18:22:05 IST" name="FooterLinkCount" finished-at="2024-11-05T18:22:10 IST" duration-ms="4632" status="PASS">
+        </test-method> <!-- Logout -->
+        <test-method is-config="true" signature="Login()[pri:0, instance:Kane.Selenium_java.test1@72035809]" started-at="2024-11-05T18:46:52 IST" name="Login" finished-at="2024-11-05T18:46:52 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- FooterLinkCount -->
-        <test-method signature="LinkCounter()[pri:0, instance:Kane.Selenium_java.Scope@2767e23c]" started-at="2024-11-05T18:22:10 IST" name="LinkCounter" finished-at="2024-11-05T18:22:13 IST" duration-ms="3873" status="PASS">
+        </test-method> <!-- Login -->
+        <test-method signature="Payment()[pri:0, instance:Kane.Selenium_java.test1@72035809]" started-at="2024-11-05T18:46:52 IST" name="Payment" finished-at="2024-11-05T18:46:52 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LinkCounter -->
-        <test-method signature="oneColumnLinkCount()[pri:0, instance:Kane.Selenium_java.Scope@2767e23c]" started-at="2024-11-05T18:22:13 IST" name="oneColumnLinkCount" finished-at="2024-11-05T18:22:18 IST" duration-ms="4209" status="PASS">
+        </test-method> <!-- Payment -->
+        <test-method signature="ViewChecks()[pri:0, instance:Kane.Selenium_java.test1@72035809]" started-at="2024-11-05T18:46:52 IST" name="ViewChecks" finished-at="2024-11-05T18:46:52 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- oneColumnLinkCount -->
-      </class> <!-- Kane.Selenium_java.Scope -->
-      <class name="Kane.Selenium_java.Misc">
-        <test-method signature="miscelaneous()[pri:0, instance:Kane.Selenium_java.Misc@402c4085]" started-at="2024-11-05T18:21:20 IST" name="miscelaneous" finished-at="2024-11-05T18:21:24 IST" duration-ms="3342" status="PASS">
+        </test-method> <!-- ViewChecks -->
+        <test-method is-config="true" signature="Login()[pri:0, instance:Kane.Selenium_java.test1@72035809]" started-at="2024-11-05T18:46:52 IST" name="Login" finished-at="2024-11-05T18:46:52 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- miscelaneous -->
-      </class> <!-- Kane.Selenium_java.Misc -->
-    </test> <!-- full package -->
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="Login()[pri:0, instance:Kane.Selenium_java.test1@72035809]" started-at="2024-11-05T18:46:52 IST" name="Login" finished-at="2024-11-05T18:46:52 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="ViewReports()[pri:0, instance:Kane.Selenium_java.test1@72035809]" started-at="2024-11-05T18:46:52 IST" name="ViewReports" finished-at="2024-11-05T18:46:52 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ViewReports -->
+      </class> <!-- Kane.Selenium_java.test1 -->
+    </test> <!-- Test suite 1 -->
   </suite> <!-- Suite -->
 </testng-results>
