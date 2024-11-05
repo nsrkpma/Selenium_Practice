@@ -1,8 +1,16 @@
 package Kane.Selenium_java;
 import javax.net.ssl.*;
 
-import java.security.cert.X509Certificate;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
+import java.security.cert.X509Certificate;
+import java.time.Duration;
+import java.io.IOException;
 import java.net.HttpURLConnection;
 
 import java.net.MalformedURLException;
