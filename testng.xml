@@ -3,7 +3,22 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="Kane.Selenium_java.Scope"/>
+      <class name="Kane.Selenium_java.BrokenLinks"/>
+      <class name="Kane.Selenium_java.Alert"/>
+     
+      <class name="Kane.Selenium_java.Practice"/>
+      <class name="Kane.Selenium_java.Scroll"/>
+      <class name="Kane.Selenium_java.Scope">
+      	<methods>
+      		<include name="FooterLinkCount"></include>
+      	</methods>
+      </class>
+      
     </classes>
-  </test> <!-- Test -->
+  </test>
+  <test name="miscellaneous">
+  <classes>
+  <class name="Kane.Selenium_java.Misc"/>
+  </classes>
+  </test>
 </suite> <!-- Suite -->

@@ -7,13 +7,15 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 import org.apache.commons.io.FileUtils;
 
 public class Misc {
 
-	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
+			// TODO Auto-generated method stub
 
+	@Test
+	public void miscelaneous() throws IOException {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
@@ -22,7 +24,7 @@ public class Misc {
 		driver.get("https://google.com");
 		
 		File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(src,new File("D:\\Selenium Java\\Selenium_java\\test-output\\screenshot.png"));
-	}
-
+		FileUtils.copyFile(src,new File("D:\\Selenium Java\\screenshot.png"));
+		driver.close();
+}
 }

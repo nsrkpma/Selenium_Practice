@@ -8,10 +8,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 public class Scroll {
 
-	public static void main(String[] args) {
+	@Test
+	public void scrollDemo() {
 		// TODO Auto-generated method stub
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -32,7 +34,7 @@ public class Scroll {
 		int printedValue=Integer.parseInt(driver.findElement(By.cssSelector(".totalAmount")).getText().split(":")[1].trim());
 		System.out.println(printedValue);
 		Assert.assertEquals(Sum, printedValue);
-		Selenium_introduction.closemethod(driver);
+		Selenium_introduction.closemethod(driver); 
 		
 
 	}

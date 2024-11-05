@@ -98,8 +98,9 @@ public class BrokenLinks {
             }
 
         }
-
+        driver.close();
         sf.assertAll();
+        
 
     }
 

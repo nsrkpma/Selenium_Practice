@@ -1,5 +1,6 @@
 package Kane.Selenium_java;
 
+import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
 
@@ -9,12 +10,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
 
 public class Practice {
 
-	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
-
+	@Test
+	public void endToEndTest() throws IOException, InterruptedException {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -42,6 +43,7 @@ public class Practice {
 		driver.findElement(By.xpath("//label[contains(text(),'I agree with the')]")).click();
 		driver.findElement(By.xpath("//input[@value='Purchase']")).click();
 		System.out.println(driver.findElement(By.xpath("//div[@class='alert alert-success alert-dismissible']")).getText());
-	}
+		driver.close();
+		}
 
 }
